@@ -8,15 +8,15 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  //   border: 2px solid;
-  //   border-color: #00cc00;
-  //   border-radius: 3px;
-  //   background: #222222;
-  //   color: #00cc00;
-  //   font-size: 16px;
-  //   line-height: 1;
-  //   padding: 0.6rem 1rem 0.4rem;
-  //   //text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  border: 2px solid;
+  border-color: #00cc00;
+  border-radius: 3px;
+  background: #222222;
+  color: #00cc00;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0.6rem 1rem 0.4rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 
   &:hover {
     border-color: #ccc #bbb #aaa;
