@@ -420,9 +420,9 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #00cc00; }
   a:visited {
-    color: purple; }
+    color: #00cc00; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -606,18 +606,6 @@ body {
   background: black;
   line-height: 1.5;
   font-size: 16px; }
-
-.site-content {
-  -ms-flex-line-pack: center;
-      align-content: center;
-  text-align: center;
-  border: 2 px solid green;
-  margin: 0 auto;
-  max-width: 1080px;
-  width: 100%; }
-  .site-content .button {
-    border: 2px solid;
-    background: #222; }
 
 /* All Archives Page */
 /* Submit a Quote Page */
