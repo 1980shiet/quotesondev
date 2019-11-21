@@ -404,8 +404,6 @@ input[type='url'],
 input[type='password'],
 input[type='search'],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
   border-radius: 3px; }
   input[type='text']:focus,
   input[type='email']:focus,
@@ -420,11 +418,13 @@ input[type='email'],
 input[type='url'],
 input[type='password'],
 input[type='search'] {
-  padding: 3px; }
+  padding: 3px;
+  color: white; }
 
 textarea {
   padding-left: 3px;
-  width: 100%; }
+  width: 100%;
+  color: white; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -572,6 +572,11 @@ a {
   content: '';
   display: table; }
 
+input,
+textarea {
+  border: 2px solid #00cc00;
+  background: transparent; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -655,5 +660,19 @@ body {
         -ms-flex-positive: 0;
             flex-grow: 0; } }
 
+.quote-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
 /* All Archives Page */
 /* Submit a Quote Page */
+.site-content::before {
+  content: 'this is before the site-content'; }
+
+.site-content::after {
+  content: 'this is after the site-content'; }

@@ -44,8 +44,8 @@ input[type='url'],
 input[type='password'],
 input[type='search'],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
+  //color: #666;
+  // border: 1px solid #ccc;
   border-radius: 3px;
 
   &:focus {
@@ -59,9 +59,11 @@ input[type='url'],
 input[type='password'],
 input[type='search'] {
   padding: 3px;
+  color: white;
 }
 
 textarea {
   padding-left: 3px;
   width: 100%;
+  color: white;
 }
