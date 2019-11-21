@@ -344,9 +344,9 @@ dd {
   margin: 0 1.5rem 1.5rem; }
 
 img {
-  height: auto;
+  height: 25vh;
   /* Make sure images are scaled correctly. */
-  max-width: 100%;
+  max-width: 65%;
   /* Adhere to container width. */ }
 
 table {
@@ -368,7 +368,7 @@ input[type='submit'] {
   color: #00cc00;
   font-size: 16px;
   line-height: 1.5;
-  padding: 0.6rem 1rem 0.4rem;
+  padding: 0.8rem 1.2rem 0.6rem;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
   button:hover,
   input[type='button']:hover,
@@ -435,7 +435,8 @@ a {
   clear: both;
   display: block;
   float: left;
-  width: 100%; }
+  width: 100%;
+  margin: 45px 0 35px; }
   .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -464,7 +465,8 @@ a {
     position: relative; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #00cc00; }
 
 /* Small menu. */
 .menu-toggle,
@@ -614,7 +616,6 @@ body {
   max-width: 1080px;
   width: 100%; }
   .site-content .button {
-    color: green;
     border: 2px solid;
     background: #222; }
 
