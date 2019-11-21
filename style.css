@@ -230,7 +230,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Exo";
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -344,7 +344,7 @@ dd {
   margin: 0 1.5rem 1.5rem; }
 
 img {
-  height: 25vh;
+  height: 20vh;
   /* Make sure images are scaled correctly. */
   max-width: 65%;
   /* Adhere to container width. */ }
@@ -368,7 +368,7 @@ input[type='submit'] {
   color: #00cc00;
   font-size: 16px;
   line-height: 1.5;
-  padding: 0.8rem 1.2rem 0.6rem;
+  padding: 10px 20px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
   button:hover,
   input[type='button']:hover,
@@ -424,7 +424,7 @@ a {
   a:visited {
     color: #00cc00; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: green; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -434,9 +434,11 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  margin: 45px 0 35px; }
+  margin: 35px 0 15px; }
   .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -516,7 +518,7 @@ a {
     clip: auto !important;
     color: #21759b;
     display: block;
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: bold;
     height: auto;
     left: 5px;
@@ -533,12 +535,10 @@ a {
 --------------------------------------------------------------*/
 .alignleft {
   display: inline;
-  float: left;
   margin-right: 1.5rem; }
 
 .alignright {
   display: inline;
-  float: right;
   margin-left: 1.5rem; }
 
 .aligncenter {
@@ -552,7 +552,7 @@ a {
 --------------------------------------------------------------*/
 .clearfix {
   clear: both;
-  content: "";
+  content: '';
   display: table; }
 
 /*--------------------------------------------------------------
@@ -603,9 +603,10 @@ object {
 --------------------------------------------------------------*/
 body {
   color: white;
-  background: black;
+  background: #222222;
   line-height: 1.5;
-  font-size: 16px; }
+  font-size: 16px;
+  padding: 12px; }
 
 /* All Archives Page */
 /* Submit a Quote Page */
