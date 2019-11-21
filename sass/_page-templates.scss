@@ -24,6 +24,27 @@ body {
     font-size: 16px;
   }
 }
+
+@include breakpoint($tablet-width) {
+  flex-shrink: 0;
+  flex-grow: 1;
+  .p {
+    margin: 0;
+  }
+}
+
+@include breakpoint($tablet-width) {
+  .site-footer {
+    display: flex;
+    margin: 32px 0;
+  }
+}
+
+@include breakpoint($tablet-width) {
+  .site-navigation {
+    flex-grow: 0;
+  }
+}
 /* All Archives Page */
 
 /* Submit a Quote Page */

@@ -19,12 +19,8 @@ input[type='submit'] {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 
   @include breakpoint($tablet-width) {
-    button,
-    input[type='button'],
-    input[type='reset'],
-    input[type='submit'] {
-      padding: 12px 42px;
-    }
+    padding: 12px 42px;
+    font-size: 18px;
   }
 
   &:hover {

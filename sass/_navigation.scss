@@ -28,11 +28,19 @@ a {
 
 .main-navigation {
   clear: both;
-  display: block;
   display: flex;
-  //float: left;
+  float: left;
   width: 100%;
   margin: 35px 0 15px;
+
+  @include breakpoint($tablet-width) {
+    width: auto;
+    margin: 15px 0;
+  }
+
+  li {
+    padding-right: 1rem;
+  }
 
   ul {
     //display: none;
