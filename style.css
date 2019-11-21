@@ -349,6 +349,10 @@ img {
   max-width: 65%;
   /* Adhere to container width. */ }
 
+@media (min-width: 620px) {
+  img {
+    max-width: 85%; } }
+
 table {
   margin: 0 0 1.5rem;
   width: 100%; }
@@ -370,6 +374,24 @@ input[type='submit'] {
   line-height: 1.5;
   padding: 10px 20px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  @media (min-width: 620px) {
+    button button,
+    button input[type='button'],
+    button input[type='reset'],
+    button input[type='submit'],
+    input[type='button'] button,
+    input[type='button'] input[type='button'],
+    input[type='button'] input[type='reset'],
+    input[type='button'] input[type='submit'],
+    input[type='reset'] button,
+    input[type='reset'] input[type='button'],
+    input[type='reset'] input[type='reset'],
+    input[type='reset'] input[type='submit'],
+    input[type='submit'] button,
+    input[type='submit'] input[type='button'],
+    input[type='submit'] input[type='reset'],
+    input[type='submit'] input[type='submit'] {
+      padding: 12px 42px; } }
   button:hover,
   input[type='button']:hover,
   input[type='reset']:hover,
@@ -605,8 +627,16 @@ body {
   color: white;
   background: #222222;
   line-height: 1.5;
-  font-size: 16px;
   padding: 12px; }
+  body p {
+    font-size: 16px; }
+
+@media (min-width: 620px) {
+  body p {
+    font-size: 25px; } }
+
+.site-info p {
+  font-size: 16px; }
 
 /* All Archives Page */
 /* Submit a Quote Page */

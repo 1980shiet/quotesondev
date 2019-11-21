@@ -67,6 +67,12 @@ img {
   max-width: 65%; /* Adhere to container width. */
 }
 
+@include breakpoint($tablet-width) {
+  img {
+    max-width: 85%;
+  }
+}
+
 table {
   margin: 0 0 $base__space-unit;
   width: 100%;

@@ -5,10 +5,25 @@ body {
   color: white;
   background: #222222;
   line-height: 1.5;
-  font-size: 16px;
   padding: 12px;
+  p {
+    font-size: 16px;
+  }
 }
 
+@include breakpoint($tablet-width) {
+  body {
+    p {
+      font-size: 25px;
+    }
+  }
+}
+
+.site-info {
+  p {
+    font-size: 16px;
+  }
+}
 /* All Archives Page */
 
 /* Submit a Quote Page */
