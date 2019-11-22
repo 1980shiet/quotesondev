@@ -37,10 +37,10 @@ get_header(); ?>
             <div class="tag-archives clearfix">
                <h2>Tags</h2>
                <?php wp_tag_cloud( array(
-                  'smallest' => 1,
-                  'largest' => 1,
-                  'unit' => 'rem',
-                  'format' => 'list'
+                 'smallest' => 16,
+                 'largest' => 20,
+                 'unit' => 'px',
+                 'format' => 'list'
                ) ); ?>
             </div>
          </section>

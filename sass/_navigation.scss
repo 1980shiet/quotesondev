@@ -94,6 +94,14 @@ a {
     &:hover > a,
     &.focus > a {
     }
+    border-right: 1px solid #fff;
+    padding-left: 10px;
+    &:first-child {
+      padding-left: 0px;
+    }
+    &:last-child {
+      border-right: none;
+    }
   }
   a {
     display: block;

@@ -482,7 +482,13 @@ a {
       left: auto; }
   .main-navigation li {
     float: left;
-    position: relative; }
+    position: relative;
+    border-right: 1px solid #fff;
+    padding-left: 10px; }
+    .main-navigation li:first-child {
+      padding-left: 0px; }
+    .main-navigation li:last-child {
+      border-right: none; }
   .main-navigation a {
     display: block;
     text-decoration: none;
@@ -630,11 +636,14 @@ body {
   line-height: 1.5;
   padding: 12px; }
   body p {
-    font-size: 14px; }
+    font-size: 16px; }
 
 @media (min-width: 620px) {
   body p {
     font-size: 25px; } }
+
+.about-page p {
+  font-size: 15px; }
 
 .site-info p {
   font-size: 16px; }
@@ -683,6 +692,10 @@ body {
     margin-bottom: 8px;
     margin-right: 10px; }
 
+@media (min-width: 620px) {
+  li {
+    font-size: 20px; } }
+
 .archives-cate {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -695,6 +708,10 @@ body {
     margin-bottom: 8px;
     margin-right: 10px; }
 
+@media (min-width: 620px) {
+  li {
+    font-size: 20px; } }
+
 .wp-tag-cloud {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -706,6 +723,10 @@ body {
   .wp-tag-cloud li {
     margin-bottom: 8px;
     margin-right: 10px; }
+
+@media (min-width: 620px) {
+  li {
+    font-size: 16px; } }
 
 .quote-source-url {
   padding-bottom: 10px; }
