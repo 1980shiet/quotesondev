@@ -35,8 +35,9 @@ get_header(); ?>
                         <label for="quote-source-url">Provide the the URL of the quote source, if available.</label>
                         <input type="url" name="quote_source_url" id="quote-source-url">
                      </div>
-
-                     <input type="submit" value="Submit Quote">
+                  <div class = "subbutton">
+                     <input class = "submit-button" id = "submits" type="submit" value="Submit Quote">
+                  </div>
                   </form>
 
                   <p class="submit-success-message" style="display:none;"></p>

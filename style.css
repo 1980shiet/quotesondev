@@ -411,7 +411,7 @@ textarea {
   input[type='password']:focus,
   input[type='search']:focus,
   textarea:focus {
-    color: #111; }
+    color: #fff; }
 
 input[type='text'],
 input[type='email'],
