@@ -2,12 +2,12 @@
 # Page Templates
 --------------------------------------------------------------*/
 body {
-  color: white;
+  color: #fff;
   background: #222222;
   line-height: 1.5;
   padding: 12px;
   p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -85,19 +85,23 @@ body {
   }
 }
 
+.quote-source-url {
+  padding-bottom: 10px;
+}
+
 /* All Archives Page */
 
 /* Submit a Quote Page */
 
 .site-content {
   &::before {
-    content: 'this is before the site-content';
+    //  content: 'this is before the site-content';
     // position: absolute;
     // left val
     // top val
   }
   &::after {
-    content: 'this is after the site-content'; // replace this with the font icon, see the slides in the slack channel
+    //content: 'this is after the site-content'; // replace this with the font icon, see the slides in the slack channel
     // position: absolute;
     // right val e.g. right: -175px;
     // top val
