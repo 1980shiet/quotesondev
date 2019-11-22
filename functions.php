@@ -65,6 +65,7 @@ function qod_scripts() {
 
 	wp_localize_script( 'qod-script', 'qod_vars', array(
 		'rest_url' => esc_url_raw( rest_url() ),
+		'home_url' => home_url(),
 		'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
 		'post_id' => get_the_ID()
 	) );
