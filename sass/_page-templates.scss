@@ -51,6 +51,40 @@ body {
   flex-direction: column;
 }
 
+.author-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  li {
+    margin-bottom: 8px;
+    margin-right: 10px;
+  }
+}
+
+.archives-cate {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  li {
+    margin-bottom: 8px;
+    margin-right: 10px;
+  }
+}
+
+.wp-tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  li {
+    margin-bottom: 8px;
+    margin-right: 10px;
+  }
+}
+
 /* All Archives Page */
 
 /* Submit a Quote Page */

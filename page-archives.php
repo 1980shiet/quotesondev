@@ -17,7 +17,7 @@ get_header(); ?>
 
             <div class="post-archives clearfix">
                <h2>Quote Authors</h2>
-               <ul>
+               <ul class="author-list">
                <?php
                   $posts = get_posts( 'posts_per_page=-1' );
                   foreach( $posts as $post ) : setup_postdata( $post );
@@ -29,7 +29,7 @@ get_header(); ?>
 
             <div class="category-archives clearfix">
                <h2>Categories</h2>
-               <ul>
+               <ul class="archives-cate">
                   <?php wp_list_categories('title_li='); ?>
                </ul>
             </div>

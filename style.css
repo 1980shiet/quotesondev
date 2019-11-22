@@ -327,7 +327,7 @@ ol {
   margin: 0 0 1.5rem 3rem; }
 
 ul {
-  list-style: disc; }
+  list-style: none; }
 
 ol {
   list-style: decimal; }
@@ -431,7 +431,8 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #00cc00; }
+  color: #00cc00;
+  text-decoration: none; }
   a:visited {
     color: #00cc00; }
   a:hover, a:focus, a:active {
@@ -668,6 +669,43 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+
+.author-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+  .author-list li {
+    margin-bottom: 8px;
+    margin-right: 10px; }
+
+.archives-cate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0; }
+  .archives-cate li {
+    margin-bottom: 8px;
+    margin-right: 10px; }
+
+.wp-tag-cloud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0; }
+  .wp-tag-cloud li {
+    margin-bottom: 8px;
+    margin-right: 10px; }
 
 /* All Archives Page */
 /* Submit a Quote Page */
