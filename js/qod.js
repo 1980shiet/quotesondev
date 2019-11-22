@@ -73,7 +73,7 @@
           title: $('#quote-author').val(), // get the title value from the form input .val()
           content: $('#quote-content').val(), // try to get the following
           _qod_quote_source: $('#quote-source').val(), // content
-          _qod_quote_source_url: $('#qoute-source-url').val() // quote source
+          _qod_quote_source_url: $('#quote-source-url').val() // quote source
           // quote source url
           // post status to pending
         },
@@ -84,12 +84,13 @@
         .done(function(response) {
           console.log(response);
           //$('#quote-submission-form').slideUp();
-          alert('Thank you for submitting a new quote');
+          $('#quote-submission-form').slideUp();
+          $('.site-content').append('Thank you for submitting a new quote');
           // append a message that says thank for submitting  new quote
         })
         .fail(function(error) {
           console.log(error);
-          alert('Error');
+          alert('Something Went Wrong');
           // todo append an error message to the dom for the user
         }); //$.ajax
     });
