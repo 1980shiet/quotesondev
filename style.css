@@ -739,12 +739,20 @@ body {
   position: relative;
   margin: 0 auto; }
   .site-content::before {
-    content: '\f10e';
+    content: '\f10d';
     font-family: 'FontAwesome';
-    font-size: 10rem;
+    font-size: 8rem;
     font-weight: 900;
     position: absolute;
-    left: -150px;
-    top: 0; }
+    left: -175px;
+    top: 0;
+    color: #00cc00; }
   .site-content::after {
-    content: ''; }
+    content: '\f10e';
+    font-family: 'FontAwesome';
+    font-size: 8rem;
+    font-weight: 900;
+    position: absolute;
+    right: -175px;
+    top: 0;
+    color: #00cc00; }
