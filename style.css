@@ -231,7 +231,6 @@ select,
 textarea {
   color: #404040;
   font-family: "Exo";
-  font-size: 1rem;
   line-height: 1.5; }
 
 /* Headings */
@@ -294,8 +293,7 @@ big {
 --------------------------------------------------------------*/
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 1rem; }
+          box-sizing: border-box; }
 
 *,
 *:before,
@@ -644,7 +642,7 @@ body {
     font-size: 25px; } }
 
 .about-page p {
-  font-size: 15px; }
+  font-size: 16px; }
 
 .site-info p {
   font-size: 16px; }
@@ -657,13 +655,6 @@ body {
           flex-grow: 1;
   .p {
     margin: 0; } }
-
-@media (min-width: 620px) {
-  .site-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 32px 0; } }
 
 @media (min-width: 620px) {
   .site-navigation {
@@ -693,10 +684,6 @@ body {
     margin-bottom: 8px;
     margin-right: 10px; }
 
-@media (min-width: 620px) {
-  li {
-    font-size: 20px; } }
-
 .archives-cate {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -710,7 +697,14 @@ body {
     margin-right: 10px; }
 
 @media (min-width: 620px) {
-  li {
+  .site-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 32px 0; } }
+
+@media (min-width: 620px) {
+  .site-content a {
     font-size: 20px; } }
 
 .wp-tag-cloud {

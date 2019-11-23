@@ -21,7 +21,7 @@ body {
 }
 .about-page {
   p {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -36,13 +36,6 @@ body {
   flex-grow: 1;
   .p {
     margin: 0;
-  }
-}
-
-@include breakpoint($tablet-width) {
-  .site-footer {
-    display: flex;
-    margin: 32px 0;
   }
 }
 
@@ -69,12 +62,6 @@ body {
   }
 }
 
-@include breakpoint($tablet-width) {
-  li {
-    font-size: 20px;
-  }
-}
-
 .archives-cate {
   display: flex;
   flex-wrap: wrap;
@@ -87,7 +74,14 @@ body {
 }
 
 @include breakpoint($tablet-width) {
-  li {
+  .site-footer {
+    display: flex;
+    margin: 32px 0;
+  }
+}
+
+@include breakpoint($tablet-width) {
+  .site-content a {
     font-size: 20px;
   }
 }
