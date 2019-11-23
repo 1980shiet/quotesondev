@@ -25,10 +25,10 @@
           // 1st value is an object which manages state
           //2nd value is the url title browser tab
           //3rd value is the url in the browser
-          //$('.entry-content').html(data[0].content.rendered);
-          //$('.entry-title').html(data[0].title.rendered);
+          $('.entry-content').html(post.content.rendered);
+          $('.entry-title').html(post.title.rendered);
 
-          if (data[0]._qod_quote_source_url !== '') {
+          if (post._qod_quote_source_url !== '') {
             $('.source').html(
               `, <a href="${data[0]._qod_quote_source_url}">${data[0]._qod_quote_source}</a>`
             );
