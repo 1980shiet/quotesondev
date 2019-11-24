@@ -61,6 +61,11 @@ input[type='password'],
 input[type='search'] {
   padding: 3px;
   color: white;
+
+  @include breakpoint($tablet-width) {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
 }
 
 textarea {

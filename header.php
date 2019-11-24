@@ -18,7 +18,7 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-		<div id="page" class="hfeed site">
+		<div class="header-hfeed" id="page" class="hfeed-site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 			
 			<a href="<?php echo home_url('/'); ?>">

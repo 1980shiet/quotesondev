@@ -346,14 +346,16 @@ img {
   /* Make sure images are scaled correctly. */
   max-width: 65%;
   /* Adhere to container width. */ }
+  @media (min-width: 620px) {
+    img {
+      height: 25vh; } }
 
-@media (min-width: 620px) {
+@media (min-width: 1080px) {
   img {
-    max-width: 85%; } }
-
-table {
-  margin: 0 0 1.5rem;
-  width: 100%; }
+    max-width: 65%; }
+  table {
+    margin: 0 0 1.5rem;
+    width: 100%; } }
 
 /*--------------------------------------------------------------
 # Forms
@@ -418,6 +420,14 @@ input[type='password'],
 input[type='search'] {
   padding: 3px;
   color: white; }
+  @media (min-width: 620px) {
+    input[type='text'],
+    input[type='email'],
+    input[type='url'],
+    input[type='password'],
+    input[type='search'] {
+      margin-top: 6px;
+      margin-bottom: 6px; } }
 
 textarea {
   padding-left: 3px;
@@ -487,6 +497,9 @@ a {
       padding-left: 0px; }
     .main-navigation li:last-child {
       border-right: none; }
+  @media (min-width: 620px) {
+    .main-navigation {
+      border-right: 1px solid #fff; } }
   .main-navigation a {
     display: block;
     text-decoration: none;
@@ -636,13 +649,22 @@ body {
   margin: 0 auto; }
   body p {
     font-size: 16px; }
+    @media (min-width: 620px) {
+      body p {
+        font-size: 28px; } }
 
-@media (min-width: 620px) {
+@media (min-width: 1080px) {
   body p {
-    font-size: 25px; } }
+    font-size: 40px; } }
 
 .about-page p {
   font-size: 16px; }
+
+@media (min-width: 1080px) {
+  .about-page,
+  h1 {
+    text-align: left;
+    max-width: 650px; } }
 
 .site-info p {
   font-size: 16px; }
@@ -696,12 +718,33 @@ body {
     margin-bottom: 8px;
     margin-right: 10px; }
 
+@media (min-width: 1080px) {
+  .header-hfeed {
+    margin: 0 auto;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
 @media (min-width: 620px) {
   .site-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 32px 0; } }
+  @media (min-width: 620px) and (min-width: 1080px) {
+    .site-footer {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      width: 85%; } }
 
 @media (min-width: 620px) {
   .site-content a {
@@ -714,7 +757,8 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-size: 20px !important; }
   .wp-tag-cloud li {
     margin-bottom: 8px;
     margin-right: 10px; }

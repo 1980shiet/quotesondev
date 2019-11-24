@@ -103,6 +103,10 @@ a {
       border-right: none;
     }
   }
+
+  @include breakpoint($tablet-width) {
+    border-right: 1px solid #fff;
+  }
   a {
     display: block;
     text-decoration: none;

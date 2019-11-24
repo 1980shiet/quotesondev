@@ -9,19 +9,29 @@ body {
   margin: 0 auto;
   p {
     font-size: 16px;
-  }
-}
-
-@include breakpoint($tablet-width) {
-  body {
-    p {
-      font-size: 25px;
+    @include breakpoint($tablet-width) {
+      font-size: 28px;
     }
   }
 }
+
+@include breakpoint($desktop-width) {
+  body p {
+    font-size: 40px;
+  }
+}
+
 .about-page {
   p {
     font-size: 16px;
+  }
+}
+
+@include breakpoint($desktop-width) {
+  .about-page,
+  h1 {
+    text-align: left;
+    max-width: 650px;
   }
 }
 
@@ -73,10 +83,24 @@ body {
   }
 }
 
+@include breakpoint($desktop-width) {
+  .header-hfeed {
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @include breakpoint($tablet-width) {
   .site-footer {
     display: flex;
     margin: 32px 0;
+    @include breakpoint($desktop-width) {
+      justify-content: flex-end;
+      width: 85%;
+    }
   }
 }
 
@@ -91,6 +115,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  font-size: 20px !important;
   li {
     margin-bottom: 8px;
     margin-right: 10px;

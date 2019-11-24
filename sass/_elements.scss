@@ -65,15 +65,17 @@ dd {
 img {
   height: 20vh; /* Make sure images are scaled correctly. */
   max-width: 65%; /* Adhere to container width. */
-}
-
-@include breakpoint($tablet-width) {
-  img {
-    max-width: 85%;
+  @include breakpoint($tablet-width) {
+    height: 25vh;
   }
 }
 
-table {
-  margin: 0 0 $base__space-unit;
-  width: 100%;
+@include breakpoint($desktop-width) {
+  img {
+    max-width: 65%;
+  }
+  table {
+    margin: 0 0 $base__space-unit;
+    width: 100%;
+  }
 }
