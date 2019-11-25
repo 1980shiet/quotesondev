@@ -7,6 +7,7 @@ body {
   line-height: 1.5;
   padding: 12px;
   margin: 0 auto;
+  font-family: 'Exo', 'sans-serif';
   p {
     font-size: 16px;
     @include breakpoint($tablet-width) {
@@ -18,20 +19,13 @@ body {
 @include breakpoint($desktop-width) {
   body p {
     font-size: 40px;
+    max-width: 650px;
   }
 }
 
 .about-page {
   p {
     font-size: 16px;
-  }
-}
-
-@include breakpoint($desktop-width) {
-  .about-page,
-  h1 {
-    text-align: left;
-    max-width: 650px;
   }
 }
 
@@ -84,6 +78,14 @@ body {
 }
 
 @include breakpoint($desktop-width) {
+  h2,
+  .site-content {
+    text-align: left;
+    max-width: 700px;
+  }
+}
+
+@include breakpoint($desktop-width) {
   .header-hfeed {
     margin: 0 auto;
     text-align: center;
@@ -107,6 +109,9 @@ body {
 @include breakpoint($tablet-width) {
   .site-content a {
     font-size: 20px;
+    @include breakpoint($desktop-width) {
+      font-size: 16px;
+    }
   }
 }
 
@@ -159,10 +164,14 @@ body {
     right: -175px;
     top: 0;
     color: $green-band;
-
-    //content: 'this is after the site-content'; // replace this with the font icon, see the slides in the slack channel
-    // position: absolute;
-    // right val e.g. right: -175px;
-    // top val
   }
+
+  @include breakpoint($desktop-width) {
+    max-width: 700px;
+  }
+
+  //content: 'this is after the site-content'; // replace this with the font icon, see the slides in the slack channel
+  // position: absolute;
+  // right val e.g. right: -175px;
+  // top val
 }

@@ -646,7 +646,8 @@ body {
   background: #222222;
   line-height: 1.5;
   padding: 12px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: 'Exo', 'sans-serif'; }
   body p {
     font-size: 16px; }
     @media (min-width: 620px) {
@@ -655,16 +656,11 @@ body {
 
 @media (min-width: 1080px) {
   body p {
-    font-size: 40px; } }
+    font-size: 40px;
+    max-width: 650px; } }
 
 .about-page p {
   font-size: 16px; }
-
-@media (min-width: 1080px) {
-  .about-page,
-  h1 {
-    text-align: left;
-    max-width: 650px; } }
 
 .site-info p {
   font-size: 16px; }
@@ -719,6 +715,12 @@ body {
     margin-right: 10px; }
 
 @media (min-width: 1080px) {
+  h2,
+  .site-content {
+    text-align: left;
+    max-width: 700px; } }
+
+@media (min-width: 1080px) {
   .header-hfeed {
     margin: 0 auto;
     text-align: center;
@@ -749,6 +751,9 @@ body {
 @media (min-width: 620px) {
   .site-content a {
     font-size: 20px; } }
+  @media (min-width: 620px) and (min-width: 1080px) {
+    .site-content a {
+      font-size: 16px; } }
 
 .wp-tag-cloud {
   display: -webkit-box;
@@ -794,3 +799,6 @@ body {
     right: -175px;
     top: 0;
     color: #00cc00; }
+  @media (min-width: 1080px) {
+    .site-content {
+      max-width: 700px; } }
