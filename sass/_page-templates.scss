@@ -2,7 +2,7 @@
 # Page Templates
 --------------------------------------------------------------*/
 body {
-  color: #fff;
+  color: #ffffff;
   background: #222222;
   line-height: 1.5;
   padding: 12px;
@@ -190,6 +190,13 @@ body {
 
   @include breakpoint($desktop-width) {
     max-width: 700px;
+  }
+
+  .search-field {
+    padding: 10px;
+    @include breakpoint($tablet-width) {
+      padding: 13px;
+    }
   }
 
   //content: 'this is after the site-content'; // replace this with the font icon, see the slides in the slack channel

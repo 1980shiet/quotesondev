@@ -158,9 +158,9 @@ select {
   text-transform: none; }
 
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   -webkit-appearance: button;
   cursor: pointer; }
 
@@ -176,23 +176,23 @@ input::-moz-focus-inner {
 input {
   line-height: normal; }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0; }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   height: auto; }
 
-input[type="search"] {
+input[type='search'] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
           box-sizing: content-box; }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
@@ -642,7 +642,7 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 body {
-  color: #fff;
+  color: #ffffff;
   background: #222222;
   line-height: 1.5;
   padding: 12px;
@@ -830,3 +830,8 @@ body {
   @media (min-width: 1080px) {
     .site-content {
       max-width: 700px; } }
+  .site-content .search-field {
+    padding: 10px; }
+    @media (min-width: 620px) {
+      .site-content .search-field {
+        padding: 13px; } }
