@@ -343,9 +343,7 @@ dd {
 
 img {
   height: 20vh;
-  /* Make sure images are scaled correctly. */
-  max-width: 65%;
-  /* Adhere to container width. */ }
+  max-width: 65%; }
   @media (min-width: 620px) {
     img {
       height: 25vh; } }
