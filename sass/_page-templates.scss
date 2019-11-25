@@ -52,6 +52,32 @@ body {
 .quote-author {
   display: flex;
   flex-direction: column;
+  @include breakpoint($desktop-width) {
+    width: 400px;
+  }
+}
+
+@include breakpoint($desktop-width) {
+  .quote-content {
+    width: 650px;
+  }
+}
+
+@include breakpoint($desktop-width) {
+  .quote-source {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+  }
+}
+
+.quote-source-url {
+  padding-bottom: 10px;
+  @include breakpoint($desktop-width) {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .author-list {
@@ -110,7 +136,7 @@ body {
   .site-content a {
     font-size: 20px;
     @include breakpoint($desktop-width) {
-      font-size: 16px;
+      font-size: 20px;
     }
   }
 }
@@ -131,10 +157,6 @@ body {
   li {
     font-size: 16px;
   }
-}
-
-.quote-source-url {
-  padding-bottom: 10px;
 }
 
 /* All Archives Page */

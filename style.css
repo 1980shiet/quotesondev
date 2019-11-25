@@ -688,6 +688,37 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  @media (min-width: 1080px) {
+    .quote-author {
+      width: 400px; } }
+
+@media (min-width: 1080px) {
+  .quote-content {
+    width: 650px; } }
+
+@media (min-width: 1080px) {
+  .quote-source {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 450px; } }
+
+.quote-source-url {
+  padding-bottom: 10px; }
+  @media (min-width: 1080px) {
+    .quote-source-url {
+      width: 450px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .author-list {
   display: -webkit-box;
@@ -753,7 +784,7 @@ body {
     font-size: 20px; } }
   @media (min-width: 620px) and (min-width: 1080px) {
     .site-content a {
-      font-size: 16px; } }
+      font-size: 20px; } }
 
 .wp-tag-cloud {
   display: -webkit-box;
@@ -771,9 +802,6 @@ body {
 @media (min-width: 620px) {
   li {
     font-size: 16px; } }
-
-.quote-source-url {
-  padding-bottom: 10px; }
 
 /* All Archives Page */
 /* Submit a Quote Page */
